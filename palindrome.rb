@@ -35,15 +35,15 @@ def welcome
   user_input = gets.strip.downcase 
   @hist << user_input
   @str_arr = user_input.split("")
-  to_str
+  reverse 
 end 
 
-def to_str 
+def reverse
   @rev =[] 
   i = -1 
     @str_arr.each do 
         @rev << @str_arr[i]
-        i-=1
+        i -= 1
     end 
   check
 end 
